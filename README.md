@@ -9,7 +9,7 @@ A Discord AI powered bot running through Hugging Face's Inteference Api, with pe
 
 2.  Clone The Repo 
  ```bash
-    git clone https://github.com/chaitanya44444/Repliyer-Bot.git```
+    git clone https://github.com/nums404/Repliyer-Bot.git```
 
 3.  Install Packages
 ```bash
@@ -19,7 +19,7 @@ A Discord AI powered bot running through Hugging Face's Inteference Api, with pe
 4.  Environment Variables
 
     To run this project, you will need to add the following environment variables to your .env file
-    - Get ur discord bot token from -https://discord.com/developers/home
+    - Get ur discord bot token from -https://discord.com/developers/home ( u will have to setup an application in https://discord.com/developers/applications/)
     -Get ur Hugging Face apikey from https://huggingface.co/settings/tokens
 
     ```
