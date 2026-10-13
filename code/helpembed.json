@@ -1,0 +1,20 @@
+{
+  "content": "Bot Help(To setup/utilize):\n",
+  "tts": false,
+  "flags": 0,
+  "embeds": [
+    {
+      "title": "Commands",
+      "description": "Some Of Our Premier Commands\n* `/help`  -This command\n* `/configcustom` -Setups up a configuration for specific ai model (needs api key)\n* `/configdefault`- Makes server go back to default configuration\n* `/giveacc`- Gives acces in server to let sm1 Talk to ai\n* `/removeacc` -Removes Acesss\n* `/Toggle` -Toggles ai on and off\n* `/add` - Gives link to add to server invite for bot",
+      "fields": [
+        {
+          "name": "# **Ai Chat Explained**:",
+          "value": "\nWith Our bot ,You can gain the power of **Super Intelligence**\n**By default Admins can use ai chat features**\n* `/toggle`- Toggles Ai Chat\n* `/configcustom` - lets you configure custom models(on hugginface api)\n* `/configdefault` - Lets you configure the default model\n* `/giveacc` - Gives Access to someone else\n* `/removeacc` - Removes Access",
+          "inline": false
+        }
+      ]
+    }
+  ],
+  "components": [],
+  "actions": {}
+}
