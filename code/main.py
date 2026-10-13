@@ -133,8 +133,8 @@ async def hf(a,systemp,prompt,modelname="google/gemma-4-31B-it",apikey=hf_api):
     timeout=90
     )
     if req.status_code != 200:
-
-        return "error"
+        return req.text
+       
 
     return req.json()["choices"][0]["message"]["content"]
    
@@ -368,7 +368,7 @@ async def add(interaction:discord.Interaction):
 @bot.event
 async def on_ready():
     print(f"Server Invite link- https://discord.com/api/oauth2/authorize?client_id={bot.user.id}&permissions=448824200272&scope=bot%20applications.commands")     
-    await bot.change_presence(activity=discord.Activity(type=discord.ActivityType.listening, name="Lets Talk it"))
+    await bot.change_presence(activity=discord.Activity(type=discord.ActivityType.listening, name="test"))
    
 
     
