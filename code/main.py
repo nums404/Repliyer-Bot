@@ -340,7 +340,7 @@ async def configdefault(interaction:discord.Interaction):
     await interaction.response.send_message(f"default chosen")
 
    
-@bot.tree.command(name="help1", description="Helps provide information to use the bot")
+@bot.tree.command(name="help", description="Helps provide information to use the bot")
 async def help_command(interaction: discord.Interaction):
     data = embedhelp()
     embed = discord.Embed.from_dict(data["embeds"][0])
@@ -349,7 +349,14 @@ async def help_command(interaction: discord.Interaction):
         embed=embed,
         ephemeral=True
     )
-    
+@bot.tree.command(name="helppublic", description="Helps provide information to use the bot")
+async def help_command(interaction: discord.Interaction):
+    data = embedhelp()
+    embed = discord.Embed.from_dict(data["embeds"][0])
+    await interaction.response.send_message(
+        content=data.get("content") or None,
+        embed=embed
+    )    
 @bot.tree.command(name="add",description='Get bot adding linkws')
 async def add(interaction:discord.Interaction):
     await interaction.response.send_message(
